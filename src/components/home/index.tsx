@@ -3,9 +3,9 @@ import { SelectedPage } from '@/shared/types';
 import ActionButton from '@/shared/ActionButton';
 import HomeText from '@/assets/HomePageText.webp';
 import HomeGraphic from '@/assets/HomePageGraphic.webp';
-import SponsorRedbull from '@/assets/SponsorRedBull.webp';
-import SponsorForbes from '@/assets/SponsorForbes.webp';
-import SponsorFortune from '@/assets/SponsorFortune.webp';
+import SponsorWorbes from '@/assets/SponsorWorbes.webp';
+import SponsorAmadon from '@/assets/SponsorAmadon.webp';
+import SponsorMacro from '@/assets/SponsorMacro.webp';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { motion } from 'framer-motion';
 
@@ -25,10 +25,8 @@ const Home = ({ setSelectedPage }: Props) => {
                 <img alt="" src={HomeText} />
               </div>
             </div>
-            <p className="mt-8 text-sm">
-              Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
-              Studios to get the Body Shapes That you Dream of.. Get Your Dream
-              Body Now.
+            <p className="pl-1 mt-8 text-sm">
+              Run a little longer, add a little more weight, challenge yourself in a new class. We’re going to crush it every day. Together.
             </p>
           </motion.div>
           <motion.div className="mt-8 flex items-center gap-8" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }} transition={{ delay: 0.2, duration: 0.5 }} variants={{hidden: { opacity: 0, x: -50 },visible: { opacity: 1, x: 0 },}}>
@@ -40,7 +38,7 @@ const Home = ({ setSelectedPage }: Props) => {
               onClick={() => setSelectedPage(SelectedPage.ContactUs)}
               href={`#${SelectedPage.ContactUs}`}
             >
-              <p>Learn More</p>
+              <p className="text-base">Learn More</p>
             </AnchorLink>
           </motion.div>
         </div>
@@ -49,12 +47,12 @@ const Home = ({ setSelectedPage }: Props) => {
         </div>
       </motion.div>
       {isAboveMediumScreens && (
-        <div className="h-[150px] w-full bg-primary-100 py-10">
+        <div className="w-full bg-primary-100 py-10">
           <div className="mx-auto w-5/6">
             <div className="flex w-3/5 items-center justify-between gap-8">
-              <img alt="Sponcor RedBull" src={SponsorRedbull} />
-              <img alt="Sponsor Forbes" src={SponsorForbes} />
-              <img alt="Sponsor Fortune" src={SponsorFortune} />
+              <img alt="Sponsor Worbes" src={SponsorWorbes} />
+              <img alt="Sponsor Amadon" src={SponsorAmadon} />
+              <img alt="Sponsor MacroSoft" src={SponsorMacro} />
             </div>
           </div>
         </div>

@@ -54,10 +54,10 @@ const NavBar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
         <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl">
           <div className="flex justify-end p-12">
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-              <XMarkIcon className="h-6 w-6 text-gray-400" />
+              <XMarkIcon className="h-8 w-8 text-secondary-500 hover:text-gray-400" />
             </button>
           </div>
-          <div className="ml-[33%] flex flex-col gap-10 text-2xl">
+          <div className="px-[20%] flex flex-col gap-10 text-2xl">
             <Link
               page="Home"
               selectedPage={selectedPage}
