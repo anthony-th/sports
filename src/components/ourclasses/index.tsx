@@ -13,7 +13,7 @@ const classes: Array<ClassType> = [
   {
     name: "Weight Training Classes",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus quis consequuntur voluptatibus quas debitis quaerat, repellendus autem officiis id reprehenderit ipsa saepe eos odio quos mollitia assumenda laudantium, inventore dolor!",
     image: image1,
   },
   {
@@ -23,13 +23,13 @@ const classes: Array<ClassType> = [
   {
     name: "Ab Core Classes",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus quis consequuntur voluptatibus quas debitis quaerat, repellendus autem officiis id reprehenderit ipsa saepe eos odio quos mollitia assumenda laudantium, inventore dolor!",
     image: image3,
   },
   {
     name: "Adventure Classes",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus quis consequuntur voluptatibus quas debitis quaerat, repellendus autem officiis id reprehenderit ipsa saepe eos odio quos mollitia assumenda laudantium, inventore dolor!",
     image: image4,
   },
   {
@@ -39,7 +39,7 @@ const classes: Array<ClassType> = [
   {
     name: "Training Classes",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus quis consequuntur voluptatibus quas debitis quaerat, repellendus autem officiis id reprehenderit ipsa saepe eos odio quos mollitia assumenda laudantium, inventore dolor!",
     image: image6,
   },
 ];
@@ -63,8 +63,8 @@ const OurClasses = ({ setSelectedPage }: Props) => {
             </p>
           </div>
         </motion.div>
-        <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
-          <ul className="w-[2800px] whitespace-nowrap">
+        <div className="mt-10 h-[365px] w-5/6 mx-auto overflow-x-auto overflow-y-hidden">
+          <ul className="flex gap-4 justify-between w-[2800px] whitespace-nowrap">
             {classes.map((item: ClassType, index) => (
               <Class key={`${item.name}-${index}`} name={item.name} description={item.description} image={item.image} />
             ))}

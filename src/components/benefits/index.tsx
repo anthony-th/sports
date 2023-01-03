@@ -41,11 +41,9 @@ const Benefits = ({ setSelectedPage }: Props) => {
     <section id="benefits" className="mx-auto min-h-full w-5/6 py-20">
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}>
         <motion.div className="md:my-5 md:w-3/5" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.5 }} variants={{hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0 },}}>
-          <HText>MORE THAN JUST GYM.</HText>
+          <HText>MORE THAN JUST SPORT</HText>
           <p className="my-5 text-sm">
-            We provide world class fitness equipment, trainers and classes to
-            get you to your ultimate fitness goals with ease. We provide true
-            care into each and every member.
+            Here at Sports we take personal training very seriously. We are here to help you achieve your fitness goals quickly and safely. For this reason we employ only the best personal trainers.
           </p>
         </motion.div>
         <motion.div className="md:flex items-center justify-between gap-8 mt-5" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }} variants={container}>
@@ -66,7 +64,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
               <div className="before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves">
                 <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.5 }} variants={{ hidden: { opacity: 0, x: 50 }, visible: { opacity: 1, x: 0 },}}>
                   <HText>
-                    MILLIONS OF HAPPY MEMBERS GETTING{" "}<span className="text-primary-500">FIT</span>
+                    MILLIONS OF HAPPY MEMBERS GETTING{" "}<span className="text-secondary-500">FIT</span>
                   </HText>
                 </motion.div>
               </div>
