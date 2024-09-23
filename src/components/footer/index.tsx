@@ -28,7 +28,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col mt-16 basis-1/4 md:mt-0 gap-4">
           <h4 className="font-bold text-2xl text-[#683220] mb-2">Contact Us</h4>
-          <address className="flex flex-col basis-1/4 md:mt-0 gap-4">
+          <address className="flex flex-col basis-1/4 md:mt-0 gap-4 not-italic">
             <FooterLink href="mailto:OurEmail@gmail.com">OurEmail@gmail.com</FooterLink>
             <FooterLink href="tel:2222222222">(222)&nbsp;222-22-22</FooterLink>
           </address>
