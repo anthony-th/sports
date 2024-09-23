@@ -4,7 +4,7 @@ type Props = {
   image: string;
 };
 
-const overlayStyles = `p-5 absolute z-30 flex h-[338px] w-[450px] flex-col items-center justify-center whitespace-normal bg-primary-500 text-center text-white opacity-0 transition duration-500 hover:opacity-90`;
+const overlayStyles = `p-5 absolute z-[29] flex h-[338px] w-[450px] flex-col items-center justify-center whitespace-normal bg-primary-500 text-center text-white opacity-0 transition duration-500 hover:opacity-90`;
 
 const Class = ({ name, description, image }: Props) => {
   return (
