@@ -25,9 +25,9 @@ const NavBar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
       >
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
-            <img alt="logo" src={Logo} />
+            <img alt="logo" src={Logo} width={113} height={24} loading="lazy" />
             {isAboveMediumScreens ? (
-              <div className={`${flexBetween} w-full`}>
+              <div className={`${flexBetween} w-full gap-4`}>
                 <div className={`${flexBetween} gap-8 text-sm`}>
                   <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                   <Link page="Benefits" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
@@ -35,7 +35,7 @@ const NavBar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                   <Link page="Contact Us" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
                 </div>
                 <div className={`${flexBetween} gap-8`}>
-                  <p>Sign In</p>
+                  <p className='text-nowrap'>Sign In</p>
                   <ActionButton setSelectedPage={setSelectedPage}>Become a Member</ActionButton>
                 </div>
               </div>

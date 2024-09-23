@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form';
 import { SelectedPage } from '@/shared/types';
 import { motion } from 'framer-motion';
-import ContactUsGraphic from '@/assets/ContactUsPageGraphic.webp';
+import ContactUsImage from '@/assets/ContactUsPageGraphic.webp';
 import HText from '@/shared/HText';
 
 type Props = {
@@ -10,9 +10,7 @@ type Props = {
 
 const ContactUs = ({ setSelectedPage }: Props) => {
   const inputStyles = `mb-7 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white text-white`;
-
   const { register, trigger, formState: { errors }, } = useForm();
-
   const onSubmit = async (e: any) => {
     const isValid = await trigger();
     if (!isValid) {
@@ -62,7 +60,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           </motion.div>
           <motion.div className="relative mt-16 basis-2/5 md:mt-0" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }} transition={{ delay: 0.2, duration: 0.5 }} variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0 }, }}>
             <div className="w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-evolvetext">
-              <img className="w-full rounded-lg opacity-95" alt="contact-us-page-graphic" src={ContactUsGraphic} />
+              <img className="w-full rounded-lg opacity-95 md:min-w-[387px] md:min-h-[420px]" alt="" src={ContactUsImage} loading="lazy" />
             </div>
           </motion.div>
         </div>

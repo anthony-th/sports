@@ -58,7 +58,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
           ))}
         </motion.div>
         <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
-          <img className="mx-auto" alt="" src={BenefitGraphic} />
+          <img className="mx-auto" alt="" src={BenefitGraphic} width={490} height={553} loading="lazy" />
           <div>
             <div className="relative">
               <div className="before:absolute before:-top-20 before:-left-10 before:z-[1] before:content-abstractwaves md:before:-left-20">
